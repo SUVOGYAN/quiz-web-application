@@ -20,16 +20,7 @@ Welcome to the **Ultimate Quiz** — a modern, interactive web-based quiz platfo
 - **CSS3** – for styling and layout animations
 - **Vanilla JavaScript** – for quiz logic, DOM manipulation, and user interaction
 
-## 📷 Screenshots
 
-![Start Page](https://via.placeholder.com/600x300?text=Start+Page)
-*Welcome screen with email input and features overview*
-
-![Quiz Page](https://via.placeholder.com/600x300?text=Quiz+Interface)
-*Live question interface with timer and navigation*
-
-![Report Page](https://via.placeholder.com/600x300?text=Result+Report)
-*Performance report after quiz submission*
 
 ## 💡 How to Use
 
