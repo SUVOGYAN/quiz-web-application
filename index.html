@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Page -->
+    <div id="start-page" class="container start-page">
+        <div class="quiz-logo">
+            <div class="logo-icon">Q</div>
+        </div>
+        <h1>Welcome to the <span class="highlight">Ultimate Quiz</span></h1>
+        <p class="intro-text">Test your knowledge with our interactive quiz experience. Enter your email to begin the challenge!</p>
+        
+        <div class="email-card">
+            <form id="email-form">
+                <div class="input-group">
+                    <div class="input-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+                <button type="submit" class="pulse-button">Start the Challenge</button>
+            </form>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">⏱️</div>
+                <div class="feature-text">Timed Challenge</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-text">Test Knowledge</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <div class="feature-text">Detailed Results</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="container hidden">
+        <div class="timer">Time Remaining: <span id="time">30:00</span></div>
+        
+        <div class="quiz-container">
+            <div class="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container"></div>
+                <div class="question-slider">
+                    <h3>Navigate Questions</h3>
+                    <div class="slider-container">
+                        <button id="prev-question">Previous</button>
+                        <input type="range" id="question-slider" min="0" max="14" value="0">
+                        <button id="next-question">Next</button>
+                    </div>
+                    <p id="slider-value">Question 1 of 15</p>
+                </div>
+            </div>
+
+            <div class="navigation-panel">
+                <h3>Question Overview</h3>
+                <div id="question-overview"></div>
+                <button id="submit-quiz">Submit Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report Page -->
+    <div id="report-page" class="container hidden">
+        <h1>Quiz Report</h1>
+        <div id="report-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
